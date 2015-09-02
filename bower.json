@@ -1,12 +1,16 @@
 {
   "name": "inline-attachment",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "homepage": "https://github.com/Rovak/InlineAttachment",
   "authors": [
     "Roy van Kaathoven <ik@royvankaathoven.nl>"
   ],
   "description": "Add attachments to plain text editors",
-  "main": "src",
+  "main": [
+    "js/inline-attachment.js",
+    "js/input.inline-attachment.js",
+    "js/angularjs.inline-attachment.js"
+  ],
   "keywords": [
     "upload"
   ],

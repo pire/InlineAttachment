@@ -48,7 +48,7 @@
   module.directive(attrName, function() {
     return function(scope, element, attrs) {
       var options = readParameters(attrs, scope);
-      inlineAttachment.editors.input.attachToInput(element.context, options);
+      inlineAttachment.editors.input.attachToInput(element[0], options);
     };
   });
 })(document, window, angular);

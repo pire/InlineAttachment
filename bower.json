@@ -7,9 +7,9 @@
   ],
   "description": "Add attachments to plain text editors",
   "main": [
-    "js/inline-attachment.js",
-    "js/input.inline-attachment.js",
-    "js/angularjs.inline-attachment.js"
+    "src/inline-attachment.js",
+    "src/input.inline-attachment.js",
+    "src/angularjs.inline-attachment.js"
   ],
   "keywords": [
     "upload"

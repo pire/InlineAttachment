@@ -305,7 +305,16 @@
         filename = result[this.settings.jsonFieldName];
 
       if (result && filename) {
-        var newValue = this.settings.urlText.replace(this.filenameTag, filename);
+
+        var newValue = '';
+
+        if (typeof this.settings.urlText === 'function') {
+          newValue = this.settings.urlText(result);
+        } else {
+          newValue = this.settings.urlText;
+        }
+
+        newValue = newValue.replace(this.filenameTag, filename);
         var text = this.editor.getValue().replace(this.lastValue, newValue);
         this.editor.setValue(text);
       }
